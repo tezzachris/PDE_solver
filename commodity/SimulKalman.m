@@ -1,17 +1,15 @@
 
 
 %Codice per simulare il prezzo di un future scadenza 30gg
-
+clear;
 T=30; %scadenza future
 
 %Runge Kutta parametri
-nint=2000; % numero di intervalli
-h=1;%T/nint; %dt grandezza intervallo
-npunti=nint+1; %numero punti griglia
+nint=1000; % numero di intervalli
 
 %Future price simulation parameters
-n = 500; %dati future 
-
+n = nint + 1; %dati future 
+h = T/nint;
 
 %Parametri Schwartz
 

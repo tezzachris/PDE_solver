@@ -1,9 +1,9 @@
-function LL = likelihood_kalman(theta, yt, T, nint)
+function LL = likelihood_kalman(theta, yt, T, H)
 
 %needs Xt0, Var(Xt0)=Pt0
-H = 0.0001;
 
-n = nint + 1 ;
+n = length(yt);
+nint = n - 1;
 h = T / nint;
 
 %xt0=[x0 theta0 qt0 vt0];

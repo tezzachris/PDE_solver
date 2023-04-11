@@ -33,9 +33,10 @@ function param = fmincon_svm(yt)
     
     theta = [nonzeros(A); nonzeros(B); nonzeros(omega1)];
 
+    H = 0.0001;
+    T = 30;
 
- 
-    param = fminunc( 'likelihood_kalman', theta , options, yt,T,nint);
+    param = fminunc( 'likelihood_kalman', theta , options, yt, T, H);
   
 
 
