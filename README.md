@@ -1,15 +1,11 @@
-## Code implementation of the following Article
+## Fully non-linear PDEs solver
 
-Reference: A monotone scheme for high-dimensional fully nonlinear PDEs
-Journal: The Annals of Applied Probability (2015) 
-Authors: Wenjie Guo, Jianfeng Zhang and Jia Zhuo 
+Code implementation of A monotone scheme for high-dimensional fully nonlinear PDEs (Annals of Applied Probability, 2015) 
+The code is designed for Black-Scholes type fully non-linear PDEs
 
-The dimensionality is ~10-20 
+bs_price1d.m : Computes the European option price for a call / put at time 0 
 
-There are two scripts in MATLAB language: 
-1) bs_price1d.m : Computes the European option price for a call / put at time 0 
-
-
+The state dimensionality is ~10-20 
 
 
 
